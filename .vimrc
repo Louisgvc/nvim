@@ -16,9 +16,9 @@ set expandtab
 filetype on
 set mouse=a
 
-le g:lighline = {
-	\'colorsheme' : 'wombat',
-	\ }
+let g:lightline = {
+    \ 'colorscheme' : 'wombat',
+    \ }
 
 " This is necessary for VimTeX to load properly. The "indent" is optional.
 " Note that most plugin managers will do this automatically.
@@ -34,7 +34,7 @@ syntax enable
 let g:vimtex_view_method = 'zathura'
 
 " Or with a generic interface:
-let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 
 " VimTeX uses latexmk as the default compiler backend. If you use it, which is
@@ -47,3 +47,18 @@ let g:vimtex_compiler_method = 'latexrun'
 " Most VimTeX mappings rely on localleader and this can be changed with the
 " following line. The default is usually fine and is the symbol "\".
 let maplocalleader = ","
+
+"disable arrow keys"
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+map <silent> <C-,> (
+map <silent> <C-;> [
+map <silent> <C-:> { 
+map <silent> <A-,> )
+map <silent> <A-;> ]
+map <silent> <A-:> }
+
