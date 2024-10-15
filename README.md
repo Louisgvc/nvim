@@ -1,9 +1,9 @@
-# Neovim config
+#  💤 LazyVim
 
-Bash
+#Erreur 
+Neovim: module 'lazy' not found
 
-'''sh
+```
+rm -rf ~/.local/share/nvim/lazy/
+```
 
-git clone https://github.com/LoBombadil/Nvim.git 
-
-'''
