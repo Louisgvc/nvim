@@ -9,6 +9,13 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
+  {
+    "ThePrimeagen/harpoon",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("harpoon").setup()
+    end,
+  },
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
