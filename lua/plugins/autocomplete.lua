@@ -7,18 +7,7 @@ return {
       "hrsh7th/cmp-buffer",         -- Complétion pour le buffer actuel
       "hrsh7th/cmp-path",           -- Complétion pour les chemins de fichiers
       "saadparwaiz1/cmp_luasnip",   -- Intégration avec LuaSnip
-      {
-        "tzachar/cmp-tabnine",
-        build = "./install.sh",     -- Installe Tabnine
-        config = function()
-          require("cmp_tabnine.config"):setup {
-            max_lines = 1000,
-            max_num_results = 3,
-            sort = true,
-          }
-        end,
       },
-    },
     config = function()
       local cmp = require("cmp")
       local luasnip = require("luasnip")
@@ -54,7 +43,6 @@ return {
           { name = "nvim_lsp" },
           { name = "buffer" },
           { name = "path" },
-          { name = "cmp_tabnine" },
           { name = "luasnip" },
         },
         formatting = {
