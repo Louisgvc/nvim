@@ -11,10 +11,8 @@ return {
     {
         "erikbackman/brightburn.vim",
     },
+
     {
-        'echasnovski/mini.nvim', version = '*',
-    },
-   {
         "folke/tokyonight.nvim",
         lazy = false,
         opts = {},
